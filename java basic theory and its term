@@ -46,8 +46,17 @@ Complexity: Java is a relatively complex language, which can make it challenging
 Limited low-level access: Java's automatic memory management and other features can make it difficult to access low-level system resources, which can be important for certain types of applications.
 Overall, while Java has many advantages and is widely used, it is important to consider these potential downsides when choosing a programming language for a particular project.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+what is JVM , JRE, JDK and what are their difference
 
+JVM, JRE, and JDK are all important components of the Java programming environment. Here is a brief overview of what they are and how they differ:
 
+JVM (Java Virtual Machine): JVM is a virtual machine that executes Java bytecode. It provides a runtime environment in which Java applications can run, regardless of the underlying hardware and operating system. The JVM is responsible for loading and executing Java bytecode, managing memory, and providing other runtime services.
+JRE (Java Runtime Environment): JRE is a software package that includes the JVM, libraries, and other components necessary to run Java applications. It provides a runtime environment for Java programs but does not include development tools such as compilers and debuggers.
+JDK (Java Development Kit): JDK is a software package that includes the JRE, development tools such as compilers and debuggers, and other utilities needed for Java development. JDK provides a complete set of tools for developing, testing, and deploying Java applications.
+The main difference between these three components is that the JVM is responsible for executing Java bytecode, the JRE provides a runtime environment for Java applications, and the JDK includes development tools for creating Java applications. In other words, the JVM and JRE are required to run Java applications, while the JDK is required for developing Java applications.
+
+To summarize, the JVM is the engine that executes Java programs, the JRE provides a runtime environment for Java applications, and the JDK provides tools for developing, testing, and deploying Java applications.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
