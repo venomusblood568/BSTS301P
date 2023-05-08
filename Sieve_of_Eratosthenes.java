@@ -28,3 +28,13 @@ public class Sieve_of_Eratosthenes {
 
 }
 //you know we can use the i*i method as well but it will comsume more time and the aboe code is more optimiesd 
+/*
+The Sieve of Eratosthenes is an algorithm used for finding all the prime numbers up to a given limit. 
+The algorithm works by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the multiples of 2.
+
+The time complexity of the Sieve of Eratosthenes algorithm is O(n log log n). This means that the time taken to execute the algorithm increases as the limit of the primes to be found increases, 
+but not as fast as linearly. In other words, as the limit increases, the time taken to execute the algorithm grows more slowly than the limit itself.
+
+The space complexity of the algorithm is O(n). This means that the amount of memory used by the algorithm grows linearly with the limit of the primes to be found. In practice, 
+this means that the algorithm can use a significant amount of memory for large limits, but it is still relatively efficient in terms of space usage compared to other prime-finding algorithms.
+*/
