@@ -1,0 +1,8 @@
+1) time complexity is directly protpotional to the input n and we call this a linear relation
+2) time complecity 
+    best case = Ω(n)
+    average case = θ(n+1/2)
+    worst case = O(n)
+ note  keep in mind when we talk about the time complexity we alwasys consider the worst case
+ cause we know no matter what time cannot pass this worst case complexity so for making the algorithum
+ better we will consider the upper case and improve it up....
