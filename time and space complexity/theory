@@ -15,5 +15,32 @@ space complexity have two types 1 constant
 Space Complexity 
 Space complexity of an algorithm quantifies the amount of time taken by a program to run as a function of length of the input. It is directly proportional to the largest memory your program acquires at any instance during run time. 
 For example: int consumes 4 bytes of memory.
+========================================================================================================
+In Big O, there are six major types of complexities (time and space):
 
+    Constant: O(1) = best case [equire only one execution step, meaning the function is in constant time]
+    example = if an algorithm is to return the first element of an array. Even if the array has 1 million elements, the time complexity will be constant 
+    
+    Linear time: O(n) = fair [The fact that the runtime depends on the input size means that the time complexity is linear with the order O(n).]
+    example = f an algorithm is to return the factorial of any inputted number. This means if you input 5 then you are to loop through and multiply 1 by 2 by 3 by 4 and by 5 and then output 120:
+    
+    Logarithmic time: O(n log n) = bad [This method is the second best because your program runs for half the input size rather than the full size. After all, the input size decreases with each iteration.]
+    example = A great example is binary search functions, which divide your sorted array based on the target value. For example, suppose you use a binary search algorithm to find the index of a given element in an array
+    
+    Quadratic time: O(n^2) = Horrible/Worst [When you perform nested iteration, meaning having a loop in a loop, the time complexity is quadratic, which is horrible.]
+    example = A perfect way to explain this would be if you have an array with n items. The outer loop will run n times, and the inner loop will run n times for each iteration of the outer loop, which will give total n^2 prints. If the array has ten items, ten will print 100 times (10^2).
+    
+    Exponential time: O(2^n) =  Horrible/Worst [You get exponential time complexity when the growth rate doubles with each addition to the input (n), often iterating through all subsets of the input elements. Any time an input unit increases by 1, the number of operations executed is doubled.]
+    example = The Fibonacci sequence is a mathematical sequence in which each number is the sum of the two preceding numbers, where 0 and 1 are the first two numbers. The third number in the sequence is 1, the fourth is 2, the fifth is 3, and so on... (0, 1, 1, 2, 3, 5, 8, 13, …).
+    This means that if you pass in 6, then the 6th element in the Fibonacci sequence would be 8:
+    
+    Factorial time: O(n!) =  Horrible/Worst
                                 
+=========================================================================================================
+When your calculation is not dependent on the input size, it is a constant time complexity (O(1)).
+When the input size is reduced by half, maybe when iterating, handling recursion, or whatsoever, it is a logarithmic time complexity (O(log n)).
+When you have a single loop within your algorithm, it is linear time complexity (O(n)).
+When you have nested loops within your algorithm, meaning a loop in a loop, it is quadratic time complexity (O(n^2)).
+When the growth rate doubles with each addition to the input, it is exponential time complexity (O2^n).
+=========================================================================================================
+
