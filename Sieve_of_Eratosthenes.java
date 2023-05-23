@@ -13,6 +13,12 @@ public class Sieve_of_Eratosthenes {
                                                //math.sqrt mathod for reducing the time complexity of the code
             if (sieeve[i] == true){
                for (int j = (i*i); j<n;j=j+i){ //first we are taking each input as true then we are makarking as false 
+                   /*
+                   int j = (i*i); - This initializes the loop variable j with the value of i squared. Starting from i*i ensures that we don't mark any numbers below i that have already been marked in previous iterations, as they would have been multiples of smaller primes.
+j < n - This is the condition that determines whether the loop should continue executing. It ensures that we stop when j exceeds or reaches the limit n, the maximum number up to which we want to find primes.
+j = j + i - This increments j by i in each iteration. It effectively moves to the next multiple of i.
+sieve[j] = false; - This assigns the value false to the j-th index of the sieve array. By doing so, we mark j as a non-prime number because it is a multiple of i.
+                   */
                    sieeve[j] = false;
                }
             }
